@@ -1,0 +1,11 @@
+<!-- <h1 class="title well">{{ title }} <small>items: {{sum}}</small></h1> -->
+<div
+     infinite-scroll
+     [infiniteScrollDistance]="0"
+     [infiniteScrollThrottle]="10"
+     (scrolled)="onScrollDown()"
+     [infiniteScrollDisabled]=finishScroll>
+ <p *ngFor="let i of array">
+    {{i}}
+ </p>
+</div>
